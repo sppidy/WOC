@@ -1,2 +1,2 @@
-# WOC
+# WOC - Winter of Code
  
