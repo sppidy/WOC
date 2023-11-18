@@ -42,7 +42,15 @@ html {
     font-weight: 600;
     transform: translateY(-5px);
 }
-
+.nav-current{
+    font-color: black;
+    background-color: white;
+    font-weight: 600;
+}
+a.nav-link.nav-current {
+    color: black;
+    font-weight: 600;
+}
 .nav-socials {
     display: flex;
     margin-left: 20px;

@@ -1,0 +1,162 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackout 2023: 30th October-5th November 2023</title>
+    <link rel="stylesheet" href="timelinestyle.css">
+    
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="nav-socials">
+                <!-- <a href="https://www.example.com" target="_blank" rel="noreferrer">
+                    <img src="./icons/twitter.svg" alt="Example Logo" width="24" height="24">
+                </a>
+                <a href="https://www.twitter.com/example" target="_blank" rel="noreferrer">
+                    <img src="./icons/discord.svg" alt="Twitter Logo" width="24" height="24">
+                </a>
+                <a href="https://www.facebook.com/example" target="_blank" rel="noreferrer">
+                    <img src="./icons/youtube.svg" alt="Facebook Logo" width="24" height="24">
+                </a> -->
+                <a href="wwwi.google.com" target="_blank" rel="noreferrer">
+                    <img src="./icons/WOC_LOGO_FINAL.png" alt="WOC" width="200" height="200">
+                </a>
+            </div>
+            <nav id="navigation">
+                <ul class="nav-main">
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="#speaker" class="nav-link">Speakers</a></li>
+                    <li><a href="#prizes" class="nav-link">Prizes</a></li>
+                    <li><a href="./schedule.html" class="nav-link nav-current">Schedule</a></li>
+                    <li><a href="./meet_the_team.html" class="nav-link">Team</a></li>
+                    <li><a href="./rules.html" class="nav-link">Rules</a></li>
+                    <li><a href="./faq.html" class="nav-link">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="timeline-section">
+      <div class="container">
+        <!-- Timeline Header -->
+        <div class="Timeline__header">
+          <h2>Timeline</h2>
+          <p class="heading--title">
+            Here is the breakdown of the time we anticipate <br />
+            using for the upcoming event.
+          </p>
+        </div>
+
+        <div class="Timeline__content">
+          <div class="Timeline__item">
+            <div class="Timeline__text">
+              <h3>Occasion 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, explicabo.
+              </p>
+              <span class="circle">1</span>
+            </div>
+            <h3 class="Timeline__date">12 Dec. 2023</h3>
+          </div>
+          <div class="Timeline__item">
+            <div class="Timeline__text">
+              <h3>Occasion 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, explicabo.
+              </p>
+              <span class="circle">2</span>
+            </div>
+            <h3 class="Timeline__date">12 Dec. 2023</h3>
+          </div>
+          <div class="Timeline__item">
+            <div class="Timeline__text">
+              <h3>Occasion 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, explicabo.
+              </p>
+              <span class="circle">3</span>
+            </div>
+            <h3 class="Timeline__date">12 Dec. 2023</h3>
+          </div>
+          <div class="Timeline__item">
+            <div class="Timeline__text">
+              <h3>Occasion 4</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, explicabo.
+              </p>
+              <span class="circle">4</span>
+            </div>
+            <h3 class="Timeline__date">12 Dec. 2023</h3>
+          </div>
+          <div class="Timeline__item">
+            <div class="Timeline__text">
+              <h3>Occasion 5</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, explicabo.
+              </p>
+              <span class="circle">5</span>
+            </div>
+            <h3 class="Timeline__date">12 Dec. 2023</h3>
+          </div>
+          <div class="Timeline__item">
+            <div class="Timeline__text">
+              <h3>Occasion 6</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, explicabo.
+              </p>
+              <span class="circle">6</span>
+            </div>
+            <h3 class="Timeline__date">12 Dec. 2023</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Tech Researchers Club VIT'C. Made with 🖤️ by Tech Researchers Club VIT'C. All rights reserved.</p>
+    </footer>
+    <script>
+    :wqdocument.addEventListener("DOMContentLoaded", () => {
+      // Select all timeline items
+      const timelineItems = document.querySelectorAll(".Timeline__item");
+
+      // Hide all timeline items initially
+      timelineItems.forEach((item) => {
+        item.style.opacity = 0;
+        item.style.transition = "opacity 0.6s ease-out";
+      });
+
+      // Intersection Observer Callback
+      const fadeInOnScroll = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+          }
+        });
+      };
+
+      // Intersection Observer Options
+      const options = {
+        root: null, // uses the viewport as root
+        rootMargin: "0px",
+        threshold: 0.1, // 10% of the item should be visible
+      };
+
+      // Creating Intersection Observer
+      const observer = new IntersectionObserver(fadeInOnScroll, options);
+
+      // Observing each timeline item
+      timelineItems.forEach((item) => {
+        observer.observe(item);
+      });
+    });
+
+    </script>   
+</body>
+</html>
