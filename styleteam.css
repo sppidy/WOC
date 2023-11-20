@@ -11,8 +11,25 @@ body {
 html {
     scroll-behavior: smooth;
   }
+#temp-effect{
+    position: absolute;
+    top:-30%;
+    left: 30%;
+    width: 37%;
+    z-index: 0;
+    mix-blend-mode:overlay;
+    transform: rotate(0deg);
+    filter: sepia(100%) saturate(100%)
+}
+
 .nav-container {
-    /*position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:40px;
+    padding-left:40px;
+    margin-top: -30px;
+    /* position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -21,12 +38,8 @@ html {
     align-items: center;
     padding: 20px 40px;
     background-color: rgba(0, 0, 0, 0.8); 
-    z-index: 1000; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    
+    z-index: 1000;
+     */
 }
 
 .nav-main {
@@ -34,6 +47,7 @@ html {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position:sticky;
 }
 
 .nav-main li a {
@@ -69,6 +83,18 @@ a.nav-link.nav-current {
     margin: 0 5px;
 }
 
+.logo-unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-unit p{
+    font-size: 400%;
+    height: auto;
+    font-family: 'black ops one';
+    margin:0 100px;
+}
 .heading {
     font-size: 2em;
     margin-bottom: 20px;
