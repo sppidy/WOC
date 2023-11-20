@@ -8,6 +8,9 @@ body {
     background-size: cover;
     position: relative;
 }
+html {
+    scroll-behavior: smooth;
+}
 .heading {
     font-size: 2em;
     margin-bottom: 20px;
@@ -16,11 +19,35 @@ body {
     font-family: 'black ops one';
     /* margin-top: 4em; */
 }
+#temp-effect{
+    position: absolute;
+    top:-30%;
+    left: 30%;
+    width: 37%;
+    z-index: 0;
+    mix-blend-mode:overlay;
+    transform: rotate(0deg);
+    filter: sepia(100%) saturate(100%)
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right:40px;
+    padding-left:40px;
+    margin-top: -30px;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000;
+     */
 }
 
 .nav-main {
@@ -44,7 +71,7 @@ body {
     color: black;
     background-color: white;
     font-weight: 600;
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Lift on hover */
 }
 .nav-current{
     font-color: black;
@@ -63,6 +90,20 @@ a.nav-link.nav-current {
 .nav-socials a {
     margin: 0 5px;
 }
+
+.logo-unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-unit p{
+    font-size: 400%;
+    height: auto;
+    font-family: 'black ops one';
+    margin:0 100px;
+}
+
 #title {
     text-align: center;
     margin-bottom: 20px;
