@@ -95,6 +95,7 @@ a.nav-link.nav-current {
     font-family: 'black ops one';
     margin:0 100px;
 }
+
 .heading {
     font-size: 2em;
     margin-bottom: 20px;
@@ -114,6 +115,8 @@ a.nav-link.nav-current {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
     gap: 10px; /* Adjust the gap between cards */
+    padding: inherit;
+    /*padding-left:125px;*/
 }
 .profile-card {
     height: 350px;
@@ -190,6 +193,8 @@ footer {
     text-align: center;
     margin-top: 20px;
     color: #ffffff;
+    padding-top: 50px;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 900px){
@@ -241,23 +246,15 @@ footer {
     }
 }
 @media only screen and (max-width: 690px){
-    .profile-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
-    }
-    .profile-card{
-        width: 290px;
-    }
+
     .nav-socials{
         display: none;
     }
     .nav-main li a{
         font-size: 10px;
-        padding: 15px 2px;
+        padding: 6px 2px;
     }
-    .profile-card{
-        margin: auto;
-    }
+    
     #navigation{
         margin: auto -30px;
     }
@@ -268,6 +265,65 @@ footer {
         font-size: 20px;
     }
     footer{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .body{
+        background-color:rgb(49, 21, 113);
+        margin: auto;
+    
+    }
+    .profile-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    }
+    .profile-card{
+        width: 290px;
+    }
+    .nav-container{
+        margin:20px 50px auto;
+        padding:0 0;
+    }
+    .nav-socials{
+        display: none;
+    }
+    .nav-main{
+        margin:auto;
+        font-size: 9.5px;
+    }
+    .profile-card{
+        margin: auto;
+    }
+    .logo-unit p{
+        font-size: 20%;
+        font-family: 'black ops one';
+    }
+    .description{
+        font-size: 10px;
+    }
+    .techy-button{
+        padding:1em;
+        /* margin-top: 5%; */
+        border-radius: 10px;
+        margin:0.5em;
+    }
+    .buttons{
+        margin-left: 20%;
+    }
+    .github{
+        margin:0 15px;
+    }
+    #img_host {
+        height: auto;
+        max-width: 20%; /* Adjust the max-width to ensure responsiveness */
+        padding: 2% 1%;
+        transition: transform 0.3s ease;
+    }
+    .wrapper p{
+        font-size: 12px;
+    }
+    footer p{
         font-size: 10px;
     }
 }

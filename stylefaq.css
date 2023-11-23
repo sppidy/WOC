@@ -147,7 +147,7 @@ footer {
 }
 
 
-  @media only screen and (max-width: 768px){
+ /* @media only screen and (max-width: 768px){
     .nav-socials{
         display: none;
     }
@@ -181,3 +181,40 @@ footer {
         margin-top: -12px;
     }
   }
+*/
+  @media screen and (max-width: 768px) {
+    .body{
+        background-color:rgb(49, 21, 113);
+        margin: auto;
+    
+    }
+    .nav-container{
+        margin:20px auto;
+        padding:0 0;
+    }
+    .nav-socials{
+        display: none;
+    }
+    .nav-main{
+        margin:auto;
+        font-size: 9.5px;
+    }
+    .faq-container {
+        display: grid;
+        grid-template-rows: repeat(auto-fit);
+        color: white;
+        margin-top: 20px;
+    }
+    .faq-question,
+    .faq-answer,
+    h2,
+    p{
+        font-size: 10px;
+    }
+    .faq-item{
+        margin-top: -12px;
+    }
+    footer p{
+        font-size: 8px;
+    }
+}
